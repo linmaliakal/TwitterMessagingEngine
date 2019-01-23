@@ -1,0 +1,15 @@
+public interface ParsTweet{
+  // constant declarations
+  // mentioned = @, topic = #, URL = http://
+  // limit is 280 characters
+  String tweet
+  int tweetLength(){}
+  boolean validTweet(tweetLength){
+  }
+
+  // method signatures
+
+  // and enumerator
+
+
+}
