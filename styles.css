@@ -1,17 +1,38 @@
 p {
   border: 1px solid powderblue;
-  padding: 30px;
+  padding: 15px;
   align-items: center;
+  text-align: center;
+  font-family: 'Futura', sans-serif;
+}
+#field1{
+  width:200px;
+  height:100px;
+  word-wrap: break-word;
+}
+h1{
+  color: #00b9ff;
 }
 body {
-  margin-left: 3%;
-  margin-right: 3%;
-  font-family: 'Mukta Malar', sans-serif;
+  margin: 0 auto;
+  width: 50%;
+  font-family: 'Futura', sans-serif;
   background: #f8f8f8;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
 }
+
 button{
-  margin-left: 3%;
-  margin-right: 3%;
-  font-family: 'Mukta Malar', sans-serif;
-  background: #f8f8f8;
+  background-color: #00b9ff; /* Green */
+  margin: 0 auto;
+  border: none;
+  color: white;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
