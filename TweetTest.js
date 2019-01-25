@@ -41,7 +41,8 @@ for(var i = 0; i <tweetStrings.length; i++){
     mentions.push(testTweet);
   }
 }
-document.getElementById("mentions").innerHTML = mentionCount;
-document.getElementById("topics").innerHTML = topicCount;
-document.getElementById("urls").innerHTML = urlCount;
+document.getElementById("mentions").innerHTML = "This is the number of mentions " + mentionCount;
+document.getElementById("topics").innerHTML = "This is the number of topics " + topicCount;
+document.getElementById("urls").innerHTML = "This is the number of urls " + urlCount;
+document.getElementById("numStrings").innerHTML = "This is the number of strings " + tweetStrings.length;
 }
