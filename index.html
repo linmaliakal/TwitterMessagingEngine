@@ -6,34 +6,40 @@
 <title>My Example</title>
 <body>
   <header><h1 align="center">Valid Tweet-Checker</h1> </header>
-Field1: <input type ="text" id="field1"><br>
+Field1: <input type ="text" id="field1"><br><br>
 <button onclick="testTweet()"type="button">Test tweet</button>
 <p id="validity">Test the validity of a tweet!</p>
 <p id="length">This is the length of the tweet</p>
 <p id="mentions">This is the number of mentions</p>
 <p id="urls">This is the number of urls</p>
 <p id="topics">This is the number of topics</p>
+<p id="numStrings">This is the number of strings</p>
 <script>
 
 
-function testTweet(){
+function testTweet(){;
   var tweet = new Object(), txt = document.getElementById("field1"), urls =[], mentions = [], topics =[];
   var tweetLength = txt.value.length;
-  var valid = false;
   if (tweetLength > 280){
-
     document.getElementById("validity").innerHTML = "This is not a valid tweet";
-    document.getElementById("length").innerHTML = tweetLength;
-  } else {
-    document.getElementById("validity").innerHTML = "This is a valid tweet";
-    document.getElementById("length").innerHTML = tweetLength;
+    document.getElementById("length").innerHTML = txt.value.length;
+  }
+  if (tweetLength == 0){
+    document.getElementById("validity").innerHTML = "This is not a valid tweet";
+  }
+    else {
+      parseTweet(txt);
   }
 }
-$(document).ready(function(){
-    tx = $('#tfield1')
-    tx.height(tx.prop('scrollHeight'));
-    //alert($('#textarea').prop('scrollHeight'));
-})
+function parseTweet(txt){
+  var tweetStrings = txt.value.split(" ");
+  document.getElementById("validity").innerHTML = "This is a valid tweet";
+  document.getElementById("numStrings").innerHTML = tweetStrings.length;
+  document.getElementById("urls").innerHTML = urls.value.length;
+}
+
+console.log(WordCount("Random String"));
+
 </script>
 </body>
 </html>
