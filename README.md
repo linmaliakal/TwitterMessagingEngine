@@ -1,8 +1,8 @@
 # TwitterMessagingEngine
 Initial project for 330 Software Engineering class in which a set of classes process Twitter-like messages. Unit tests are included as well.
 ## Details
-Developing a set of classes to process Twitter-like messages and writing unit tests to show that the code works.
-Tweet Guidelines:<br/>  
+Developing a set of classes to process Twitter-like messages and writing unit tests to show that the code works.<br/>
+Tweet Guidelines:  
 * no more than 280 characters
 * "#" can have any alphanumeric characters after it
 * "#" cannot have "#" after it, otherwise it will not be recognized as a "tagged" element
