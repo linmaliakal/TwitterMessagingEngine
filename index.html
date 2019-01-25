@@ -34,11 +34,15 @@ function testTweet(){;
 function parseTweet(txt){
   var tweetStrings = txt.value.split(" ");
   document.getElementById("validity").innerHTML = "This is a valid tweet";
-  document.getElementById("numStrings").innerHTML = tweetStrings.length;
-  document.getElementById("urls").innerHTML = urls.value.length;
+  document.getElementById("numStrings").innerHTML = tweetStrings;
+  document.getElementById("urls").innerHTML = n;
+  var arrayLength = tweetStrings.length;
+  document.getElementById("urls").innerHtml = urlsArray.length;
+
 }
 
-console.log(WordCount("Random String"));
+
+
 
 </script>
 </body>
