@@ -8,12 +8,13 @@ class Student {
 interface Person {
   firstName: string;
   lastName: string;
+  middleInit: string;
 }
 
 function greet(person: Person) {
-  return "Hello, " + person.firstName + " " + person.lastName;
+  return "Hello, " + person.firstName + " " + person.middleInit + " " + person.lastName;
 }
 
-let user = {firstName: "Linette", lastName:  "Maliakal"}
+let user = new Student("Linette", "V.", "Maliakal");
 
 document.body.innerHTML = greet(user);
