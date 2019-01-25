@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script src = "TweetTest.js"></script>
 </head>
 <title>My Example</title>
 <body>
@@ -14,36 +15,5 @@ Field1: <input type ="text" id="field1"><br><br>
 <p id="urls">This is the number of urls</p>
 <p id="topics">This is the number of topics</p>
 <p id="numStrings">This is the number of strings</p>
-<script>
-
-
-function testTweet(){;
-  var tweet = new Object(), txt = document.getElementById("field1"), urls =[], mentions = [], topics =[];
-  var tweetLength = txt.value.length;
-  if (tweetLength > 280){
-    document.getElementById("validity").innerHTML = "This is not a valid tweet";
-    document.getElementById("length").innerHTML = txt.value.length;
-  }
-  if (tweetLength == 0){
-    document.getElementById("validity").innerHTML = "This is not a valid tweet";
-  }
-    else {
-      parseTweet(txt);
-  }
-}
-function parseTweet(txt){
-  var tweetStrings = txt.value.split(" ");
-  document.getElementById("validity").innerHTML = "This is a valid tweet";
-  document.getElementById("numStrings").innerHTML = tweetStrings;
-  document.getElementById("urls").innerHTML = n;
-  var arrayLength = tweetStrings.length;
-  document.getElementById("urls").innerHtml = urlsArray.length;
-
-}
-
-
-
-
-</script>
 </body>
 </html>
