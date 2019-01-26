@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Testing with Jasmine</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine-html.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/boot.min.js"></script>
     <script src="Jas.js"></script>
     <script src="JasSpec.js"></script>
+    <title>Tweet Page</title>
   </head>
   <body>
+    <header><h1 align="center">Valid Tweet-Checker</h1> </header>
+    Field1: <input type ="text" id="field1"><br><br>
+    <button onclick="testTweet()"type="button">Test tweet</button>
+    <p id="validity">Test the validity of a tweet!</p>
+    <p id="length">Length of tweet</p>
+    <p id="mentions">Number of mentions</p>
+    <p id="urls">Number of URLs</p>
+    <p id="topics">Number of topics</p>
+    <p id="numStrings">Number of strings</p>
   </body>
+
+  <script src="tweetPermissions.js"></script>
 </html>
