@@ -1,4 +1,4 @@
-function testTweet(){;
+function tLength(){;
   var tweet = new Object(), txt = document.getElementById("field1");
   var tweetLength = txt.value.length;
   if (tweetLength > 280){
