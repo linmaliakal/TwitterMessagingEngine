@@ -5,10 +5,9 @@ p {
   text-align: center;
   font-family: 'Futura', sans-serif;
 }
-#field1{
+.textarea{
   width:200px;
   height:100px;
-  word-wrap: break-word;
 }
 h1{
   color: #00b9ff;
