@@ -1,7 +1,7 @@
 function tLength(){;
   var tweet = new Object(), txt = document.getElementById("field1");
   var tweetLength = txt.value.length;
-  if (tweetLength > 280){
+  if (tweetLength >= 280){
     document.getElementById("validity").innerHTML = "This is not a valid tweet";
     document.getElementById("length").innerHTML = txt.value.length;
   }
@@ -41,4 +41,7 @@ function parseTweet(txt){
   document.getElementById("topics").innerHTML = "Number of topics: " + topicCount;
   document.getElementById("urls").innerHTML = "Number of URLs: " + urlCount;
   document.getElementById("numStrings").innerHTML = "Number of strings: " + tweetStrings.length;
+}
+function getOpposite(foo) {
+  return !foo;
 }
