@@ -22,7 +22,7 @@ describe("Length of Tweet", function() {
     var result1 = charLength1;
     var result2 = charLength2;
     //assert
-    expect(result).toBeGreaterThan(280);
+    expect(result0).toBeGreaterThan(280);
     expect(result).not.toBeLessThan(280);
     expect(result1).toBeLessThan(280);
     expect(result2).toBe(280);
@@ -33,9 +33,9 @@ describe("Mentions from @", function() {
     //arrange
     var mention = "Hey, @linmaliakal";
     //act
-    //var result = parseTweet(mention);
+    var result = parseTweet(mention);
     //assert
-    //expect(result).toBeTrue();
+    expect(result).toBeTrue();
   });
 });
 describe("Topics from #", function() {
