@@ -1,5 +1,5 @@
-function tLength(){;
-  var tweet = new Object(), txt = document.getElementById("field1");
+function tLength(){
+  var txt = document.getElementById("field1");
   var tweetLength = txt.value.length;
   if (tweetLength >= 280){
     document.getElementById("validity").innerHTML = "This is not a valid tweet";
