@@ -19,11 +19,11 @@ function parseTweet(txt){
         urlCount++;
         urls.push(testTweet);
     }
-      else if(/^#/.test(testTweet)){
+      else if(/^#?/.test(testTweet) && (/^#/.test(testTweet))){
         topicCount++;
         topics.push(testTweet);
     }
-      else if (/^@/.test(testTweet)){
+      else if (/^@?/.test(testTweet) && (/^@/.test(testTweet))){
       mentionCount++;
       mentions.push(testTweet);
     }
