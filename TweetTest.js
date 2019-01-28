@@ -1,5 +1,6 @@
 function testTweet(){;
-  var tweet = new Object(), txt = document.getElementById("field1");
+//  var tweet = new Object(), 
+  var txt = document.getElementById("field1");
   parseTweet(txt);
 }
 function parseTweet(txt){
@@ -13,22 +14,22 @@ function parseTweet(txt){
   if (tweetLength < 280 && tweetLength != 0){
     document.getElementById("validity").innerHTML = "This is a valid tweet";
     document.getElementById("length").innerHTML = "The length of this text is "+ txt.value.length + " total characters";
-    for(var i = 0; i <tweetStrings.length; i++){
+    for(var i = 0; i < tweetStrings.length; i++){
     testTweet = tweetStrings[i];
       if (/^http/.test(testTweet)){
         urlCount++;
         urls.push(testTweet);
     }
-      else if(/^#?/.test(testTweet) && (/^#/.test(testTweet))){
+      else if(/^#{1}/.test(testTweet)){
         topicCount++;
         topics.push(testTweet);
     }
-      else if (/^@?/.test(testTweet) && (/^@/.test(testTweet))){
+      else if (/^@{1}/.test(testTweet)){
       mentionCount++;
       mentions.push(testTweet);
     }
   }
-  } else if (tweetLength == 0){
+} else if (tweetLength == 0 || tweetLength > 280){
     document.getElementById("validity").innerHTML = "This is not a valid tweet";
   } else {
       document.getElementById("validity").innerHTML = "This is not a valid tweet";
