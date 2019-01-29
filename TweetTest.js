@@ -53,13 +53,13 @@ function parseTweet(txt){
       topicsFinal.push(testerTweet3);
     }
   }
+  document.getElementById("mentions").innerHTML = "This is the number of mentions " + mentionCount + " " + mentions;
+  document.getElementById("topics").innerHTML = "This is the number of topics " + topicCount + " " + topics;
+  document.getElementById("urls").innerHTML = "This is the number of urls " + urlCount + " " + urls;
 } else if (tweetLength == 0 || tweetLength > 280){
     document.getElementById("validity").innerHTML = "This is not a valid tweet";
     document.getElementById("length").innerHTML = "The length of this text is "+ txt.value.length;
   }
 
-document.getElementById("mentions").innerHTML = "This is the number of mentions " + mentionCount; //+ ". They are " + mentions;
-document.getElementById("topics").innerHTML = "This is the number of topics " + topicCount;//+ ". They are " + topics;
-document.getElementById("urls").innerHTML = "This is the number of urls " + urlCount;// + ". They are " + urls;
 document.getElementById("numStrings").innerHTML = "This is the number of strings " + tweetStrings.length;
 }
