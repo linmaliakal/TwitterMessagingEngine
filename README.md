@@ -1,5 +1,6 @@
 # TwitterMessagingEngine
-Initial project for 330 Software Engineering class in which a set of classes process Twitter-like messages. Unit tests are included as well.
+Initial project for 330 Software Engineering class in which a set of classes process Twitter-like messages. Unit tests are included as well. <br/>
+We decided on using JavaScript to develop this API to take on a new challenge for the both of us. Both of us had familiarity in designing websites and writing with the basics of JS so we thought it would be interesting to try using this language instead of Java which we both have used in the past. The link in the repo takes you to the page we designed to run the JS file and see the tweet bot in action!
 ## Details
 Developing a set of classes to process Twitter-like messages and writing unit tests to show that the code works.<br/>
 Tweet Guidelines:  
